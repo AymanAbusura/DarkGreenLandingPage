@@ -733,7 +733,7 @@ textarea{
 	-webkit-box-pack:center;
 	-ms-flex-pack:center;
 	justify-content:center;
-	background:#01c9ee;
+/*	background:#01c9ee;*/
 	border-radius:50%
 }
 .icon-big{
@@ -793,7 +793,7 @@ textarea{
 	gap:10px
 }
 .benefit__col p{
-	color:#191d26;
+	color: #fff;
 	font-weight:600;
 	line-height:1.5
 }
