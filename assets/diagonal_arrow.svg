@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 287" width="278" height="287">
+	<title>Стрелка 1</title>
+	<style>
+		.s0 { fill: #000000 } 
+		.s1 { fill: #0ee811 } 
+	</style>
+	<g>
+		<g id="_Слой_1">
+			<path fill-rule="evenodd" class="s0" d="m52 10h175c25.4 0 46 20.6 46 46v175c0 25.4-20.6 46-46 46h-175c-25.4 0-46-20.6-46-46v-175c0-25.4 20.6-46 46-46z"/>
+			<path fill-rule="evenodd" class="s1" d="m77 74v24h92.1l-100.1 100 16 16 101.5-101.5v93.9h22.5v-132.4h-132z"/>
+		</g>
+	</g>
+</svg>
