@@ -79,7 +79,8 @@ body{
 	line-height:1.5;
 	word-break:break-word;
 	color:#687a7f;
-	background-color: #131b2e;
+	background: #131b2e;
+/*	background: #141f33;*/
 }
 .wrapper{
 	overflow:hidden;
@@ -95,7 +96,8 @@ section{
 	padding-block:30px
 }
 section.p0{
-	padding-block:30px 0
+	padding-block: 30px 0;
+	padding-bottom: 50px;
 }
 
 .bg {
