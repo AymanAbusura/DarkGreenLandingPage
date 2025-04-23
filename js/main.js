@@ -102,7 +102,14 @@ window.onload = function() {;
                 breakpointsArray.push(breakpoint);
             });
             let mediaQueries = breakpointsArray.map(function(item) {
-                return ("(" + item.type + "-width: " + item.value + "px)," + item.value + "," + item.type);
+                return ("(" +
+                    item.type +
+                    "-width: " +
+                    item.value +
+                    "px)," +
+                    item.value +
+                    "," +
+                    item.type);
             });
             mediaQueries = mediaQueries.filter(function(item, index, self) {
                 return self.indexOf(item) === index;
@@ -156,62 +163,22 @@ window.onload = function() {;
             }
         }
 
-        // function setSpoilerAction(e) {
-        //  const el = e.target;
-        //  if (el.hasAttribute("data-spoiler") || el.closest("[data-spoiler]")) {
-        //      const spoilerButton = el.hasAttribute("data-spoiler") ? el : el.closest("[data-spoiler]");
-        //      const spoilersBlock = spoilerButton.closest("[data-spoilers]");
-        //      const oneSpoiler = spoilersBlock.hasAttribute("data-one-spoiler") ? true : false;
-        //      if (!spoilersBlock.querySelectorAll("._slide").lenght) {
-        //          if (oneSpoiler && !spoilerButton.classList.contains("_active")) {
-        //              hideSpoilerBody(spoilersBlock);
-        //          }
-        //          spoilerButton.classList.toggle("_active");
-        //          _slideToggle(spoilerButton.nextElementSibling, 500);
-        //      }
-        //      e.preventDefault();
-        //  }
-        // }
-
         function setSpoilerAction(e) {
             const el = e.target;
             if (el.hasAttribute("data-spoiler") || el.closest("[data-spoiler]")) {
                 const spoilerButton = el.hasAttribute("data-spoiler") ? el : el.closest("[data-spoiler]");
                 const spoilersBlock = spoilerButton.closest("[data-spoilers]");
-                const allSpoilers = spoilersBlock.querySelectorAll(".spoiler__item");
-                const allIcons = spoilersBlock.querySelectorAll(".icon-big-faq");
-                const allSpoilerTexts = spoilersBlock.querySelectorAll(".spoiler__text");
-
-                const spoilerItem = spoilerButton.closest(".spoiler__item");
-                const icon = spoilerButton.querySelector(".icon-big-faq");
-
-                allSpoilers.forEach(item => {
-                    item.style.background = "#1a142eb3";
-                    item.style.border = "1px solid #a575e1";
-                });
-
-                allIcons.forEach(icon => {
-                    icon.style.display = "block";
-                });
-
-                allSpoilerTexts.forEach(text => {
-                    text.hidden = true;
-                });
-
-                if (!spoilerButton.classList.contains("_active")) {
-                    spoilerButton.classList.add("_active");
-                    spoilerItem.style.background = "#2D1431B3";
-                    spoilerItem.style.border = "1px solid #db1246";
-                    if (icon) icon.style.display = "none";
+                const oneSpoiler = spoilersBlock.hasAttribute("data-one-spoiler") ? true : false;
+                if (!spoilersBlock.querySelectorAll("._slide").lenght) {
+                    if (oneSpoiler && !spoilerButton.classList.contains("_active")) {
+                        hideSpoilerBody(spoilersBlock);
+                    }
+                    spoilerButton.classList.toggle("_active");
                     _slideToggle(spoilerButton.nextElementSibling, 500);
-                } else {
-                    spoilerButton.classList.remove("_active");
                 }
-
                 e.preventDefault();
             }
         }
-
 
         function hideSpoilerBody(spoilersBlock) {
             const spoilerActiveButton = spoilersBlock.querySelector("[data-spoiler]._active");
@@ -222,6 +189,7 @@ window.onload = function() {;
             }
         }
     }
+    
     let _slideUp = (target, duration = 500) => {
         if (!target.classList.contains("_slide")) {
             target.classList.add("_slide");

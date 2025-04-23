@@ -13,6 +13,11 @@
   font-weight: 300;
 }
 
+.roboto-mono-medium {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+}
+
 .roboto-mono-bold {
   font-family: 'Roboto Mono', monospace;
   font-weight: 700;
@@ -42,7 +47,7 @@
     border: 1px solid #fff;
     border-radius: 10px;
     cursor: pointer;
-    font-weight: 400;
+/*    font-weight: 400;*/
 }
 
 .contact-btn:hover {
@@ -415,6 +420,93 @@
     padding: 10px;
     width: 65px;
     height: 65px;
+}
+
+/* FAQ SECTION */
+.faq__column h2 {
+    text-transform: uppercase;
+}
+
+.faq__column h2 span {
+    display: inline;
+}
+
+.faq__description {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* NEXT SECTION */
+.bg__get__ready {
+    background-image: url(../assets/get_ready.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1320px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.bg__get__ready h2 {
+    color: #000;
+    font-size: 70px;
+    padding-top: 50px;
+}
+
+.bg__get__ready p {
+    padding-top: 25px;
+}
+
+.bg__get__ready div {
+    background: #8d30ff;
+    color: #fff;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.btn-pulse span {
+    font-size: 30px;
+    text-transform: none;
+}
+
+.bg__get__ready .btn-o:hover {
+    background: #8d30ff;
+    border: 1px solid #8d30ff;
+}
+
+.btn-pulse {
+    animation: pulse-idle 1.5s infinite;
+}
+
+.btn-pulse:hover {
+    animation: pulse-hover 1.5s infinite;
+}
+
+@keyframes pulse-idle {
+    0% {
+        transform: scale(0.98);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.98);
+    }
+}
+
+@keyframes pulse-hover {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* FOOTER */

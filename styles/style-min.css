@@ -641,25 +641,28 @@ textarea{
 	max-width:320px
 }
 .faq{
-	background:#f7f8f8
+/*	background: #f7f8f8;*/
 }
 .faq__row{
 	display:-webkit-box;
 	display:-ms-flexbox;
 	display:flex;
+	flex-direction: column;
+	-ms-flex-direction: column;
 	-ms-flex-wrap:wrap;
 	flex-wrap:wrap;
 	-webkit-box-pack:justify;
 	-ms-flex-pack:justify;
 	justify-content:space-between;
-	gap:30px
+	gap: 30px;
+	align-items: center;
 }
-.faq__column p{
+/*.faq__column p{
 	color:#1a1a1a;
 	font-size:18px;
 	font-weight:500;
 	line-height:1.7
-}
+}*/
 .faq__column .btn{
 	margin-left:0
 }
@@ -670,21 +673,18 @@ textarea{
 .spoiler{
 	display:grid
 }
-.spoiler__item{
-	border-bottom:1px solid rgba(213,217,237,.2)
-}
 .spoiler__title{
 	position:relative;
-	margin-bottom:10px;
+/*	margin-bottom:10px;*/
 	padding:17px 50px 15px 30px;
 	width:100%;
-	font-weight:700;
+/*	font-weight:700;*/
 	font-size:16px;
 	line-height:1.4;
 	text-align:left;
 	border-radius:10px;
-	background:#fff;
-	color:#1a1a1a
+/*	background:#fff;*/
+	color: #fff;
 }
 .spoiler__title::before{
 	content:"";
@@ -694,17 +694,27 @@ textarea{
 	display:block;
 	width:24px;
 	height:24px;
-/*	background-image:url("../assets/icon-open.svg");*/
+	background-image:url("../assets/diagonal_arrow_faq.svg");
 	background-size:contain;
 	background-repeat:no-repeat;
 	-webkit-transition:all .3s ease-in;
 	transition:all .3s ease-in
 }
-.spoiler__title._active::before{
-	background-image:url("")
+
+.spoiler__title._active::before {
+	background-image: url("../assets/diagonal_arrow_faq_dark.svg");
+	background-color: #0ee811;
+	border-radius: 3px;
+	padding: 4px;
 }
+
+.spoiler__title._active {
+	color: #0ee811;
+}
+
 .spoiler__text{
-	padding:0 15px 15px 20px
+	padding: 0 15px 15px 30px;
+	color: #aaa;
 }
 .points .title-2{
 	text-align:center
@@ -854,7 +864,7 @@ textarea{
 .copyright{
 	font-size:12px;
 	text-align:center;
-	color:#b1b1b1
+	color: #fff;
 }
 .copyright span{
 	color:#fff!important;
@@ -1033,7 +1043,7 @@ table p+p{
 		width:calc(50% - 30px)
 }
 	.spoiler__title{
-		font-size:18px
+		font-size: 28px;
 }
 	.point p{
 		padding:10px 30px
@@ -1201,7 +1211,7 @@ table p+p{
 }
 	.faq__column{
 		margin:0;
-		max-width:350px
+/*		max-width:350px*/
 }
 	.faq__spoiler{
 		width:calc(100% - 380px)
