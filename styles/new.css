@@ -535,9 +535,66 @@
     color: #0ee811;
 }
 
+/* LOGIN PAGE */
+.title-form-login {
+    text-align: left!important;
+    color: #fff!important;
+    text-transform: uppercase!important;
+    font-size: 60px!important;
+    max-width: 700px;
+}
+
+.title-form-login span {
+    display: inline!important;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #c2f34e, #0ee811);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.form-login-wrapper {
+    padding: 2px;
+    background: linear-gradient(to bottom, #2d47a3, #4d2795);
+    width: fit-content;
+}
+
+.form-login {
+    background: #141f33 !important;
+    border-radius: 0px !important;
+    overflow: hidden !important;
+    text-align: left !important;
+    margin-top: 0!important;
+    padding: 10px!important;
+}
+
+.form-login > .form-login-inner {
+    background: #141f33 !important;
+    border-radius: 0px !important;
+    padding: 24px 16px !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.btn-o-login {
+    width: 100%!important;
+}
+
+.form-login input {
+    background: #a4a5aa;
+    color: #fff;
+    border: none;
+}
+
 @media (width: 1024px) {
     .bg {
-        background-position: left center;
+        background-position: left center!important;
     }
 /* NEXT SECTION */
     .increase {
@@ -556,9 +613,20 @@
 }
 
 @media (max-width: 768px) {
-    .bg {
-        background-image: none;
+    .title-form-login {
+        font-size: 50px !important;
     }
+
+    .container__login {
+        display: flex!important;
+        flex-direction: column!important;
+        align-items: center;
+    }
+
+    .bg, .bg__login {
+        background-image: none!important;
+    }
+
     .home__body__div__2 { margin-top: 0px; }
     .desktop-nav, .desktop, .mobile_hidden { display: none!important; }
     .mobile-menu { 
@@ -709,6 +777,10 @@
 }
 
 @media (max-width: 425px) {
+    .title-form-login {
+        font-size: 30px !important;
+    }
+
     .nav {
         flex-direction: column;
         gap: 0;
