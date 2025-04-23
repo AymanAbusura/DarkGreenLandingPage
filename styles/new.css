@@ -167,8 +167,8 @@
 }
 
 /* NEXT SECTION */
-.about__section {
-    background: #141f33;;
+.about__section, .benefit__section {
+    background: #141f33;
 }
 
 .about__container p {
@@ -486,6 +486,10 @@
         font-size: 30px;
     }
 
+    .buttons-container button {
+        width: 300px;
+    }
+
     .buttons-container {
         flex-direction: column;
         align-items: center;
@@ -513,5 +517,11 @@
 
     .getting__started {
         font-size: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .home__text {
+        font-size: 28px;
     }
 }
