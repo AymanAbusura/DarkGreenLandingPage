@@ -1,0 +1,19 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 213 237" width="213" height="237">
+	<title>Кнопка Play</title>
+	<defs>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,-226.4,189.988,0,109.7,230.5)">
+			<stop offset="0" stop-color="#c2f34e"/>
+			<stop offset="1" stop-color="#abf34e"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+	</style>
+	<g>
+		<g id="_Слой_1">
+			<g>
+				<path class="s0" d="m14.8 22.8v189c0 14.6 16.1 23.6 28.5 15.9l152.6-94.5c11.8-7.3 11.8-24.4 0-31.7l-152.6-94.5c-12.4-7.7-28.5 1.2-28.5 15.9z"/>
+			</g>
+		</g>
+	</g>
+</svg>
