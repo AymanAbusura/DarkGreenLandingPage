@@ -47,7 +47,6 @@
     border: 1px solid #fff;
     border-radius: 10px;
     cursor: pointer;
-/*    font-weight: 400;*/
 }
 
 .contact-btn:hover {
@@ -58,6 +57,11 @@
 
 .desktop-nav, .desktop { display: flex; }
 .mobile-menu { display: none; }
+
+.home__hold {
+    position: relative;
+    z-index: 5;
+}
 
 .home__text span {
   display: block;
@@ -706,6 +710,40 @@
 
 .bg__about__section {
     background-position: center -22px!important;
+}
+
+/* FLASH */
+.flash1 {
+    background: url("../assets/flash1.png") center center / contain no-repeat;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 43%;
+    left: -14%;
+}
+
+.flash2 {
+    background: url("../assets/flash2.png") center center / contain no-repeat;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    z-index: 1;
+    top: 15%;
+    left: -48%;
+}
+
+.flash3 {
+    background: url("../assets/flash3.png") center center / contain no-repeat;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    left: 45%;
 }
 
 @media (width: 1024px) {
