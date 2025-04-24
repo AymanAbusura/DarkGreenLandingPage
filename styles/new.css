@@ -177,7 +177,7 @@
 }
 
 /* NEXT SECTION */
-.about__section, .benefit__section {
+.benefit__section {
     background: #141f33;
 }
 
@@ -200,6 +200,22 @@
 .increase {
     border-radius: 30px;
     max-width: 600px;
+}
+
+.video-section-2 {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+}
+
+.bg-video-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 /* NEXT SECTION */
