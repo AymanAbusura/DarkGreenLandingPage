@@ -541,6 +541,11 @@
 }
 
 /* LOGIN PAGE */
+.login {
+    position: relative;
+    z-index: 3;
+}
+
 .title-form-login {
     text-align: left!important;
     color: #fff!important;
@@ -602,6 +607,11 @@
 }
 
 /* CONTACT PAGE */
+.login {
+    position: relative;
+    z-index: 3;
+}
+
 .title-form-contact {
     text-align: left!important;
     color: #fff!important;
@@ -660,10 +670,15 @@
 }
 
 /* ABOUT PAGE */
-.about_section-glow {
+.about_section {
     box-shadow: 
         0 0 15px rgba(255, 255, 255, 0.4),
         0 0 25px rgba(255, 255, 255, 0.2);   
+}
+
+.about__flex {
+    position: relative;
+    z-index: 3;
 }
 
 .about-text {
@@ -682,7 +697,7 @@
     max-width: 900px;
     position: absolute;
     left: 48%;
-    top: 10%;
+    top: -13%;
 }
 
 .about__wrapper {
@@ -697,6 +712,9 @@
     box-shadow: 
         0 0 15px rgba(255, 255, 255, 0.4),
         0 0 25px rgba(255, 255, 255, 0.2);
+
+    position: relative;
+    z-index: 3;
 }
 
 .container__about {
@@ -708,8 +726,22 @@
     font-size: 16px;
 }
 
+.container__about p {
+    position: relative;
+    z-index: 3;
+}
+
 .bg__about__section {
     background-position: center -22px!important;
+}
+
+.about__block {
+    position: relative;
+}
+
+.delivers__container {
+    position: relative;
+    z-index: 3;
 }
 
 /* FLASH */
@@ -744,6 +776,19 @@
     z-index: 1;
     top: 25%;
     left: 45%;
+}
+
+.flash1__about {
+    bottom: 60%;
+}
+
+.flash3__about, .flash2__about {
+    top: -23%;
+}
+
+.flash3__goals {
+    top: 10%;
+    left: 37%;
 }
 
 @media (width: 1024px) {
