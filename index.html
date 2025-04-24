@@ -293,6 +293,14 @@
 <script src="js/main.js"></script>
 
 <script>
+    // FAQ SCROLL
+    $("a[href='#faq']").click(function(e) {
+        e.preventDefault();
+        var destination = $('.faq').offset().top;
+        $("html:not(:animated), body:not(:animated)").animate({ scrollTop: destination }, 800);
+        return false;
+    });
+    
     // SCRIPT FOR INCREASING NUMBERS
     document.addEventListener("DOMContentLoaded", () => {
         const counters = [
