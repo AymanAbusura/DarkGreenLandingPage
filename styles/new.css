@@ -50,9 +50,9 @@
 }
 
 .contact-btn:hover {
-  background: #0ee811;
-  color: #000;
-  border: 1px solid #0ee811;
+    background: #0ee811;
+    color: #000;
+    border: 1px solid #0ee811;
 }
 
 .desktop-nav, .desktop { display: flex; }
@@ -60,11 +60,11 @@
 
 .home__hold {
     position: relative;
-    z-index: 5;
+    z-index: 3;
 }
 
 .home__text span {
-  display: block;
+    display: block;
 }
 
 .home__body__div__2 {
